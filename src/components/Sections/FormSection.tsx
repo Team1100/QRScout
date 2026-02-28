@@ -18,7 +18,7 @@ export default function FormSection(props: SectionProps) {
   const inputs = useMemo(() => section?.fields, [section]);
 
   return (
-    <Section title={props.name}>
+    <Section title={props.name} color={section?.color}>
       {inputs?.map((input: InputBase) => (
         <InputCard
           title={input.title}

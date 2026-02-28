@@ -453,19 +453,19 @@ export default function ActionTrackerInput(props: ConfigurableInputProps) {
       {/* Timer controls */}
       <div className="flex gap-2">
         {!isRunning ? (
-          <Button variant="outline" size="sm" onClick={startTimer}>
+          <Button variant="outline" size="field" onClick={startTimer}>
             <Play className="mr-1 size-4" />
             Start
           </Button>
         ) : (
-          <Button variant="outline" size="sm" onClick={stopTimer}>
+          <Button variant="outline" size="field" onClick={stopTimer}>
             <Square className="mr-1 size-4" />
             Stop
           </Button>
         )}
         <Button
           variant="outline"
-          size="sm"
+          size="field"
           onClick={undoLastAction}
           disabled={actionLog.length === 0}
         >

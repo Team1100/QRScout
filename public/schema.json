@@ -11,7 +11,7 @@
     },
     "year": {
       "type": "number",
-      "description": "The year this scouting config is relevant for."
+      "description": "The year this scouting config is relevant for. Defaults to the current year if not provided."
     },
     "delimiter": {
       "type": "string",
@@ -225,6 +225,10 @@
         "properties": {
           "name": {
             "type": "string"
+          },
+          "color": {
+            "type": "string",
+            "description": "hex color for the section header"
           },
           "fields": {
             "type": "array",
@@ -876,7 +880,6 @@
   "required": [
     "title",
     "page_title",
-    "year",
     "delimiter",
     "teamNumber",
     "sections"
