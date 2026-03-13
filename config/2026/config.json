@@ -91,17 +91,18 @@
           "max": 99999
         },
         {
-            "title": "Prediction",
-            "description": "Which alliance do you think will win?",
-            "type": "select",
-            "required": false,
-            "code": "alliancePrediction",
-            "formResetBehavior": "reset",
-            "defaultValue": "",
-            "choices": {
-                "Red": "Red",
-                "Blue": "Blue"
-            }
+          "title": "Match Prediction!",
+          "description": "Who do you think will win the match? (pls dont change this after the match is over)",
+          "type": "select",
+          "required": true,
+          "code": "Prediction",
+          "formResetBehavior": "reset",
+          "defaultValue": "No Prediction",
+          "choices": {
+            "No Prediction": "No Prediction",
+            "Red": "Red",
+            "Blue": "Blue"
+          }
         },
         {
           "title": "No Show",
@@ -203,7 +204,7 @@
           "description": "Did the robot get off the gound?",
           "type": "boolean",
           "required": false,
-          "code": "boolClimb",
+          "code": "noShow",
           "formResetBehavior": "reset",
           "defaultValue": false
         },
